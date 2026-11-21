@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tiviss-client"
+version = "0.1.0"
+description = "T.I.V.I.S.S. client library: device-side transport, protocol and security client for the R.I.S.A.R.M.S. ecosystem"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Kishir298" }]
+keywords = ["tiviss", "client", "risarms", "security"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=8.0"]
+
+[project.scripts]
+tiviss-client = "tiviss_client.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["tiviss_client*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-ra"
+
+[tool.ruff]
+line-length = 88
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E9", "F", "I"]

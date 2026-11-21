@@ -1,0 +1,60 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Test / coverage
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# Logs
+*.log
+
+# Tooling caches
+.mypy_cache/
+.ruff_cache/
+.pyre/
+
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# TLS material (never commit private keys)
+*.key
+*.pfx
+*.p12
+*.crt
+*.cer
+*.pem
+
+# Runtime state / secrets
+runtime/*
+!runtime/.gitkeep
+
+# Tool backups
+opencode.json.backup
+.aider*
+
+# Stagnant artifacts
+test_output.txt
+test_results.txt
