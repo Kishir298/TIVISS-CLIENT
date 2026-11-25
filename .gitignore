@@ -58,3 +58,9 @@ opencode.json.backup
 # Stagnant artifacts
 test_output.txt
 test_results.txt
+
+# Local-only config / TLS / runtime data / secrets
+config/*.lan.yaml
+tls/
+var/
+secrets/
