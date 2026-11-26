@@ -48,6 +48,15 @@ Desktop.ini
 *.pem
 
 # Runtime state / secrets
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+*.db-wal
+*.db-shm
+*.sqlite-journal
+*.sqlite-wal
+*.sqlite-shm
 runtime/*
 !runtime/.gitkeep
 
